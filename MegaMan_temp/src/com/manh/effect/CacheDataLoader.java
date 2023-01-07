@@ -102,7 +102,7 @@ public class CacheDataLoader {
 				try {
 					sound = AudioSystem.getAudioInputStream(url);
 					audioClip = AudioSystem.getClip();
-					audioClip.open(sound);
+					audioClip.open(sound); 
 				} catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -213,7 +213,7 @@ public class CacheDataLoader {
 			BufferedImage img = ImageIO.read(getClass().getClassLoader().getResource(path));
 			BufferedImage subImage = img.getSubimage(x, y, witdth, height);
 			frame.setImage(subImage);
-
+			// teamview
 			frameImages.put(frame.getName(), frame);
 		}
 
